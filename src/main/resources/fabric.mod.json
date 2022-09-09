@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "origin",
+  "version": "${version}",
+
+  "name": "Origin Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Darkmaster_32",
+    "JustSomePal"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dark_pal.origin.Origin"
+    ],
+    "client": [
+      "net.dark_pal.origin.OriginClient"
+    ]
+  },
+  "mixins": [
+    "origin.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
